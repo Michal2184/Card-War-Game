@@ -1,0 +1,99 @@
+@font-face{
+    font-family: 'Stencil';
+    font-style: normal;
+    src: url("graph/StencilStd.otf") format("opentype");;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100vh;
+}
+
+img {
+    height: 185px;
+    box-shadow: 5px 10px 18px black;
+}
+
+body {
+    background: url(graph/table.jpg);
+    background-size: 100% 100%;
+}
+
+p {
+    font-family: Stencil, sans-serif;
+    font-size: 2em;
+}
+#draw {
+    font-family: Stencil, sans-serif;
+    font-size: 2em;
+    padding:1em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+}
+.times-drawn {
+    float: right;
+    color: white;
+    padding: 1em;
+    text-shadow: 3px 3px 3px black;
+}
+
+.player1-name {
+    text-transform: uppercase;
+}
+.player1-stats {
+    background-color: lightgrey;
+    opacity: 1;
+    text-align: center;
+    width: 20em;
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 5em;
+}
+
+.player2-name {
+    text-transform: uppercase;
+}
+.player2-stats {
+    background-color: lightgray;
+    opacity: 0.3;
+    float: right;
+    text-align: center;
+    width: 20em;
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 5em;
+}
+
+.player1 {
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.playing-cards {
+    display: flex;
+    height: 35vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+.player2 {
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* PLAYER CARDS VISIBILITY SETTINGS  */
+.hidden {
+    visibility: hidden;
+}
